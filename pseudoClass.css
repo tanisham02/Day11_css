@@ -1,0 +1,44 @@
+| Feature           | Pseudo-Class (`:`)                | Pseudo-Element (`::`)                   |
+| ----------------- | --------------------------------- | --------------------------------------- |
+| Acts on...        | **Element state** or **position** | **Part of element content**             |
+| Syntax            | Single colon `:`                  | Double colon `::`                       |
+| Examples          | `:hover`, `:focus`, `:nth-child`  | `::before`, `::after`, `::first-letter` |
+| Adds new content? | ❌ No                              | ✅ Yes (`content`)                       
+
+
+<style>
+a:hover {
+  color: orange;
+}
+
+button:active {
+  background-color: red;
+}
+
+input:focus {
+  border: 2px solid green;
+}
+
+li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+h2::before {
+  content: "🔹 ";
+}
+
+h2::after {
+  content: " 🔸";
+}
+</style>
+
+<a href="#">Link</a>
+<button>Click me</button>
+<input type="text" placeholder="Focus me">
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+<h2>Heading</h2>
+

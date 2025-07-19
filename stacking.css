@@ -1,0 +1,18 @@
+## Use Cases for z-index:
+
+| Use Case                       | Why Use `z-index`?                                     |
+| ------------------------------ | ------------------------------------------------------ |
+| **Modals / Popups**            | Bring them above the rest of the page                  |
+| **Dropdown menus**             | Appear above headers or content                        |
+| **Tooltips**                   | Always float above target element                      |
+| **Sticky headers/footers**     | Ensure header stays above scrolling content            |
+| **Image overlays**             | Display captions or effects over an image              |
+| **Complex UIs (like sliders)** | Manage overlapping elements (arrows, captions, slides) |
+
+
+## Rules of Stacking
+Higher z-index wins — among elements in the same stacking context.
+If z-index is equal or auto, source order wins (later in HTML = on top).
+Positioning required — z-index only works on positioned elements (relative, absolute, fixed, sticky).
+
+

@@ -1,0 +1,41 @@
+## Transition:
+
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  transition-property: background-color, transform; // Animate these properties
+  transition-duration: 0.5s;                         // Lasts for 0.5 seconds
+  transition-timing-function: ease;                  // Eases in/out
+}
+
+.box:hover {
+  background-color: teal;
+  transform: scale(1.2);
+}
+</style>
+<div class="box"></div>
+
+
+## Animation:
+
+<style>
+@keyframes moveRight {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  animation-name: moveRight;           // Name of the keyframes
+  animation-duration: 2s;              // Each loop takes 2 seconds
+  animation-delay: 1s;                 // Wait 1 second before starting
+  animation-iteration-count: infinite; // Repeat forever
+}
+</style>
+
+<div class="animate-box"></div>
